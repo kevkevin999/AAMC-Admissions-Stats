@@ -19,7 +19,7 @@ time.sleep(2)
 # page = requests.get(URL)
 # soup = BeautifulSoup(page.content, "html.parser")
 results = driver.find_elements(by=By.CLASS_NAME, value="content-container")
-print(results)
+print(results[0].text)
 
 # cards = soup.find_all("mat-card", class_="mat-mdc-card mdc-card ng-star-inserted")
 # print(cards)
